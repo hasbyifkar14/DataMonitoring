@@ -11,3 +11,5 @@ WHERE
 v.tanggal_report='2023-06-21'
 GROUP BY sku_id,visit_id,is_listing,reason_id,reguler_stock_value,stock,price
 HAVING COUNT(rps.sku_id)>1;
+
+//untuk mengoptimalkan query ini harus dibuatkan schedular atau cronjob
